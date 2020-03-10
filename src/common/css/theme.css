@@ -1,0 +1,77 @@
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.green-text {
+  color: #61b07a
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.font-14 {
+  font-size: 14px;
+}
+
+.van-tabs__line {
+  width: 20.8px;
+  height: 5.2px;
+  border-radius: 2.6px;
+  background-color: #61b07a;
+}
+
+.van-info {
+  background-color: #df6758;
+}
+
+.van-button {
+  border-radius: 5.2px;
+  line-height: 50px;
+  font-weight: bold;
+  height: 50px;
+}
+
+.van-button--primary {
+  background-color: #61b07a;
+  border: 1px solid #61b07a;
+}
+
+.van-button--normal {
+  font-size: 16px;
+}
