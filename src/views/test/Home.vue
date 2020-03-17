@@ -28,7 +28,7 @@ import { Button } from 'vant';
 Vue.use(Button);
 
 export default {
-  name: 'Home'wwew,
+  name: 'Home',
   data() {
     return {};
   },
