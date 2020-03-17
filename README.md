@@ -35,10 +35,10 @@ yarn lint
 ```
 
 ### TODO
-1. git commit 规范
-2. prettier 代码
+1. git commit 规范 **(fixed)**
+2. prettier 代码 **(fixed)**
 3. 优化webpack 配置
-4. house 命名修改，改完通用名 credit/opay/oloan
+4. house 命名修改，改完通用名 credit/opay/oloan **(fixed)**
 5. 规划第一版CLI
     1. opay init {{projectName}} --type {{vue, react, lib}}初始化项目 default: react
 
