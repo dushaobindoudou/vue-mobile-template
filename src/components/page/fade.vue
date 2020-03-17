@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 import { Button } from 'mint-ui';
 
 export default {
@@ -26,6 +25,6 @@ export default {
 
 .page-switch-enter,
 .page-switch-leave-active {
-  opacity: 0
+  opacity: 0;
 }
 </style>

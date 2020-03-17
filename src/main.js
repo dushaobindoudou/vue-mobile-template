@@ -4,13 +4,7 @@ import router from '@router';
 import PageContainer from '@components/page/container.vue';
 
 import {
-  Tab,
-  Tabs,
-  List,
-  PullRefresh,
-  Button,
-  Dialog,
-  Locale,
+  Tab, Tabs, List, PullRefresh, Button, Dialog, Locale,
 } from 'vant';
 
 import enUS from 'vant/lib/locale/lang/en-US';
@@ -27,7 +21,6 @@ Vue.use(List);
 Vue.use(PullRefresh);
 Vue.use(Button);
 Vue.use(Dialog);
-
 
 Vue.component(PageContainer.name, PageContainer);
 

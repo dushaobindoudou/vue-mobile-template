@@ -38,7 +38,7 @@ export default {
 .router-view-container {
   position: absolute;
   transition: opacity 0.54s, transform 0.54s;
-  transition-timing-function: cubic-bezier(0.32,0.72,0,1);
+  transition-timing-function: cubic-bezier(0.32, 0.72, 0, 1);
   width: 100%;
 }
 

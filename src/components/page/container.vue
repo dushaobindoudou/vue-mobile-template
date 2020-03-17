@@ -14,50 +14,50 @@
   </div>
 </template>
 <style lang="scss" scoped>
-  .app-container {
-    overflow: hidden;
-  }
-  .page-header-container {
-    // margin-top: 25px;
-    width: 100%;
-    position: fixed;
-    background-color: #ffffff;
-    z-index: 999;
-    top: 0;
-  }
-  .page-header {
-    height: 58px;
-    line-height: 58px;
-  }
-  .left-back {
-    background-image: url('./assets/left.svg');
-    background-repeat: no-repeat;
-    background-size: 25px 25px;
-    width: 25px;
-    height: 25px;
-  }
+.app-container {
+  overflow: hidden;
+}
+.page-header-container {
+  // margin-top: 25px;
+  width: 100%;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 999;
+  top: 0;
+}
+.page-header {
+  height: 58px;
+  line-height: 58px;
+}
+.left-back {
+  background-image: url('./assets/left.svg');
+  background-repeat: no-repeat;
+  background-size: 25px 25px;
+  width: 25px;
+  height: 25px;
+}
 
-  /deep/ .van-nav-bar__left {
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+/deep/ .van-nav-bar__left {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  /deep/ .van-nav-bar__title {
-    font-family: SFProText;
-    font-size: 16px;
-    font-weight: 500;
-    text-align: center;
-    color: #61b07a;
-  }
+/deep/ .van-nav-bar__title {
+  font-family: SFProText;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #61b07a;
+}
 
-  /deep/ .van-hairline--bottom::after {
-    border-color: #d8d8d8;
-  }
-  .container {
-    margin-top: 58px;
-  }
+/deep/ .van-hairline--bottom::after {
+  border-color: #d8d8d8;
+}
+.container {
+  margin-top: 58px;
+}
 </style>
 <script>
 import { NavBar } from 'vant';

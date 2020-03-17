@@ -17,19 +17,18 @@ export default {
       this.$emit('click', ...args);
     },
   },
-}
+};
 </script>
 
 <style lang="scss" scoped>
-  .circle-btn {
-    width: 60px;
-    height: 60px;
-    background: url('./assets/circle.png');
-    background-size: 60px 60px;
-    border-radius: 50%;
-    &:disabled {
-      background-image: url('./assets/disable.png');
-    }
+.circle-btn {
+  width: 60px;
+  height: 60px;
+  background: url('./assets/circle.png');
+  background-size: 60px 60px;
+  border-radius: 50%;
+  &:disabled {
+    background-image: url('./assets/disable.png');
   }
-
+}
 </style>

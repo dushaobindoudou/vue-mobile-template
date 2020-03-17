@@ -1,18 +1,18 @@
 <template>
-  <page name="About">
-    <div class="about">
-      <h1>This is an about page</h1>
+  <page name="helloWorld">
+    <div class="hello-world">
+      <h1>This is an hello world page</h1>
     </div>
   </page>
 </template>
 <style lang="scss" scoped>
-.about {
+.hello-world {
   width: 10rem;
 }
 </style>
 <script>
 export default {
-  name: 'about',
+  name: 'hello-world',
   components: {},
   mounted() {
     setTimeout(() => {

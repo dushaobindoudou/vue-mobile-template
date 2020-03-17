@@ -10,7 +10,7 @@ export default {
     };
   },
   getters: {
-    isAdmin() { 
+    isAdmin() {
       return false;
     },
   },

@@ -8,10 +8,10 @@
 import normalPage from '@components/page/normal.vue';
 
 export default {
-  created() {},
   components: {
     normalPage,
   },
+  created() {},
   mounted() {
     console.log('当前环境数据：', process.env);
   },
@@ -19,7 +19,6 @@ export default {
 </script>
 
 <style lang="scss">
-
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -28,6 +27,7 @@ export default {
   color: #2c3e50;
   height: 100%;
 }
+
 .defalut {
   width: 5rem;
 }

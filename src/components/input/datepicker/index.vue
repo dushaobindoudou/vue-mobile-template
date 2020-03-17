@@ -78,7 +78,7 @@ export default {
     dpMinDate() {
       if (!this.minDate) {
         const now = new Date();
-        now.setFullYear(now.getFullYear() - this.yearGap)
+        now.setFullYear(now.getFullYear() - this.yearGap);
         return now;
       }
       return new Date(this.minDate);
@@ -86,13 +86,13 @@ export default {
     dpMaxDate() {
       if (!this.maxDate) {
         const now = new Date();
-        now.setFullYear(now.getFullYear() + this.yearGap)
+        now.setFullYear(now.getFullYear() + this.yearGap);
         return now;
       }
       return new Date(this.maxDate);
     },
     currentDateStr() {
-      return this.selectedData ? this.formatDate(this.selectedData) : ''
+      return this.selectedData ? this.formatDate(this.selectedData) : '';
     },
   },
   watch: {
@@ -128,26 +128,28 @@ export default {
     formatDate(date) {
       const currentMonth = date.getMonth() + 1;
       const currentDay = date.getDate();
-      return `${date.getFullYear()}-${currentMonth < 10 ? '0' : ''}${currentMonth}-${currentDay < 10 ? '0' : ''}${currentDay}`;
+      return `${date.getFullYear()}-${currentMonth < 10 ? '0' : ''}${currentMonth}-${
+        currentDay < 10 ? '0' : ''
+      }${currentDay}`;
     },
     showCalendar() {
       this.calendarShow = true;
     },
   },
-}
+};
 </script>
 <style lang="scss" scoped>
-  .calendar-container {
-    position: relative;
-    .calendar-icon {
-      position: absolute;
-      cursor: pointer;
-      width: 26px;
-      height: 26px;
-      background-image: url('./assets/calendar-icon.png');
-      background-size: 26px 26px;
-      right: 8px;
-      bottom: 10px;
-    }
+.calendar-container {
+  position: relative;
+  .calendar-icon {
+    position: absolute;
+    cursor: pointer;
+    width: 26px;
+    height: 26px;
+    background-image: url('./assets/calendar-icon.png');
+    background-size: 26px 26px;
+    right: 8px;
+    bottom: 10px;
   }
+}
 </style>

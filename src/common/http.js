@@ -10,6 +10,7 @@ http.interceptors.request.use(
     // eslint-disable-next-line no-param-reassign
     const token = storage.read(config.storage.userToken);
     if (token) {
+      // eslint-disable-next-line no-param-reassign
       configReq.headers.Authorization = token;
     }
     return configReq;
@@ -57,18 +58,22 @@ export function extendApi(apiConf) {
     // eslint-disable-next-line max-len
     result[v] = (params, data, extConfig) => http.request({
       ...apiConf[v],
-      ...(params ? {
-        params: {
-          ...apiConf[v].params,
-          ...params,
-        },
-      } : null),
-      ...(data ? {
-        data: {
-          ...apiConf[v].data,
-          ...data,
-        },
-      } : null),
+      ...(params
+        ? {
+          params: {
+            ...apiConf[v].params,
+            ...params,
+          },
+        }
+        : null),
+      ...(data
+        ? {
+          data: {
+            ...apiConf[v].data,
+            ...data,
+          },
+        }
+        : null),
       ...(extConfig || null),
     });
   });

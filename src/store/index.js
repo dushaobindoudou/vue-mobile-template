@@ -18,19 +18,19 @@ export default new Vuex.Store({
         backImageID: '',
         orderData: {},
       },
-    }
+    };
   },
   actions: {
     update({ commit }, payload) {
-      console.log('当前state信息：', payload)
-      commit('update', payload)
+      console.log('当前state信息：', payload);
+      commit('update', payload);
     },
   },
   mutations: {
     updateOrderStatus(state, payload) {
-      console.log('当前payload信息：', payload)
-      console.log('当前state信息：', state)
-      state.orderStatus = { ...state.orderStatus, ...payload }
+      console.log('当前payload信息：', payload);
+      console.log('当前state信息：', state);
+      state.orderStatus = { ...state.orderStatus, ...payload };
     },
   },
   modules: {

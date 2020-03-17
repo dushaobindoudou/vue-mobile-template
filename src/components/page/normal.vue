@@ -5,7 +5,6 @@
 </template>
 
 <script>
-
 import { Button } from 'mint-ui';
 
 export default {
@@ -16,6 +15,4 @@ export default {
 };
 </script>
 
-<style lang="scss">
-
-</style>
+<style lang="scss"></style>

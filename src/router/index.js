@@ -47,7 +47,7 @@ const routes = [
 const router = new VueRouter({
   routes: concatRoute(routes),
   scrollBehavior() {
-    return { x: 0, y: 0 }
+    return { x: 0, y: 0 };
   },
 });
 
@@ -75,6 +75,6 @@ const router = new VueRouter({
 
 router.afterEach(() => {
   window.scrollTo(0, 0);
-})
+});
 
 export default router;

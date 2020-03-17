@@ -11,7 +11,6 @@ module.exports = {
         target: process.env.VUE_APP_DEBUG_HOST,
         changeOrigin: true,
         ws: true,
-
       },
     },
   },
@@ -24,9 +23,7 @@ module.exports = {
             unitToConvert: 'px',
             viewportWidth: 375,
             unitPrecision: 3,
-            propList: [
-              '*',
-            ],
+            propList: ['*'],
             viewportUnit: 'vw',
             fontViewportUnit: 'vw',
             selectorBlackList: [],
@@ -44,8 +41,10 @@ module.exports = {
   // },
   configureWebpack: (config) => {
     if (process.env.NODE_ENV === 'production') {
-      config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true
+      // eslint-disable-next-line no-param-reassign
+      config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true;
     }
+    // eslint-disable-next-line no-param-reassign
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname, 'src/'),
@@ -54,7 +53,7 @@ module.exports = {
       '@router': path.resolve(__dirname, './src/router'),
       '@store': path.resolve(__dirname, './src/store'),
       '@api': path.resolve(__dirname, './src/api'),
-    }
+    };
   },
 
   // chainWebpack: (config) => {
